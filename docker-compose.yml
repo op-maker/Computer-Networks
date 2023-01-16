@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  backend:
+    build: backend/
+    container_name: backend
+    ports:
+      - 127.0.0.1:9090:9090
+    command: gunicorn back_app:app  -b 0.0.0.0:9090
+  frontend:
+    build: frontend/
+    container_name: frontend
+    command: python front_app.py 
+    network_mode: host
+    depends_on:
+      - backend

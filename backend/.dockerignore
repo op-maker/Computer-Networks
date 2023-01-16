@@ -1,0 +1,13 @@
+.git
+.cache
+*.md
+.gitignore
+LICENSE
+Dockerfile*
+docker-compose*
+*env*
+*pycache*
+*.ipynb*
+*.vs*
+*.log
+*.tmp

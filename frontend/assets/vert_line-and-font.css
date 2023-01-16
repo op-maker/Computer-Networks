@@ -1,0 +1,9 @@
+.vl {
+    border-left: 2px solid black;
+    height: 1000px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+  }
+.h_font { font-family: 'Yrsa', serif;}
